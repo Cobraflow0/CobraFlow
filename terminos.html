@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Términos de Servicio — CobraFlow</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --black: #0a0a08;
+    --surface: #0f0f0d;
+    --off-white: #f2efe8;
+    --cream: #c8c4b8;
+    --muted: #5a5a52;
+    --border: rgba(242,239,232,0.08);
+    --accent: #d4ff4a;
+    --font-display: 'Bebas Neue', sans-serif;
+    --font-body: 'DM Sans', sans-serif;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: var(--font-body);
+    background: var(--black);
+    color: var(--off-white);
+    font-size: 15px;
+    line-height: 1.8;
+  }
+  header {
+    padding: 24px 40px;
+    border-bottom: 0.5px solid var(--border);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .logo {
+    font-family: var(--font-display);
+    font-size: 22px;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    color: var(--off-white);
+  }
+  .logo span { color: var(--accent); }
+  .back {
+    font-size: 13px;
+    color: var(--muted);
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+  .back:hover { color: var(--off-white); }
+  .container {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 60px 40px 100px;
+  }
+  .doc-label {
+    font-size: 12px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 12px;
+  }
+  h1 {
+    font-family: var(--font-display);
+    font-size: 48px;
+    letter-spacing: 0.02em;
+    line-height: 1;
+    margin-bottom: 16px;
+  }
+  .meta {
+    font-size: 13px;
+    color: var(--muted);
+    margin-bottom: 56px;
+    padding-bottom: 32px;
+    border-bottom: 0.5px solid var(--border);
+  }
+  h2 {
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--off-white);
+    margin: 40px 0 12px;
+  }
+  h2::before {
+    content: '—';
+    color: var(--accent);
+    margin-right: 10px;
+  }
+  p { color: var(--cream); margin-bottom: 14px; }
+  ul {
+    list-style: none;
+    margin: 0 0 14px 0;
+    padding: 0;
+  }
+  ul li {
+    color: var(--cream);
+    padding: 4px 0 4px 20px;
+    position: relative;
+  }
+  ul li::before {
+    content: '·';
+    color: var(--accent);
+    position: absolute;
+    left: 0;
+    font-size: 18px;
+    line-height: 1.5;
+  }
+  .highlight {
+    background: rgba(212,255,74,0.06);
+    border: 0.5px solid rgba(212,255,74,0.15);
+    border-radius: 8px;
+    padding: 20px 24px;
+    margin: 24px 0;
+  }
+  .highlight p { margin: 0; color: var(--cream); font-size: 14px; }
+  .planes-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    margin: 20px 0;
+  }
+  .plan-card {
+    background: rgba(242,239,232,0.04);
+    border: 0.5px solid rgba(242,239,232,0.1);
+    border-radius: 8px;
+    padding: 16px;
+  }
+  .plan-name {
+    font-size: 12px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 6px;
+  }
+  .plan-price {
+    font-family: var(--font-display);
+    font-size: 28px;
+    color: var(--off-white);
+    letter-spacing: 0.02em;
+  }
+  .plan-price span { font-family: var(--font-body); font-size: 13px; color: var(--muted); }
+  .plan-features { font-size: 12px; color: var(--muted); margin-top: 8px; line-height: 1.6; }
+  .placeholder {
+    background: rgba(239,159,39,0.15);
+    color: #ef9f27;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 13px;
+    font-weight: 500;
+  }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  footer {
+    border-top: 0.5px solid var(--border);
+    padding: 32px 40px;
+    text-align: center;
+    font-size: 13px;
+    color: var(--muted);
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <a href="/" class="logo">Cobra<span>Flow</span></a>
+  <a href="/" class="back">← Volver al inicio</a>
+</header>
+
+<div class="container">
+  <div class="doc-label">Legal</div>
+  <h1>Términos de Servicio</h1>
+  <div class="meta">
+    Última actualización: 1 de junio de 2026 &nbsp;·&nbsp; Versión 1.0
+  </div>
+
+  <div class="highlight">
+    <p>Al contratar CobraFlow aceptas estos términos en su totalidad. Si no estás de acuerdo, no utilices el servicio. Estos términos constituyen un contrato vinculante entre tú y el titular de CobraFlow.</p>
+  </div>
+
+  <h2>1. Descripción del servicio</h2>
+  <p>CobraFlow es una plataforma SaaS de cobro automatizado de facturas para autónomos y pymes españolas. El servicio permite registrar deudores y facturas pendientes, y envía automáticamente emails de reclamación con escalada progresiva (niveles 1 a 4) mediante inteligencia artificial.</p>
+  <p>CobraFlow es una herramienta de gestión y comunicación. No presta servicios legales, no actúa como representante del usuario frente a terceros, y no garantiza el cobro efectivo de ninguna factura.</p>
+
+  <h2>2. Planes y precios</h2>
+  <p>CobraFlow ofrece los siguientes planes de suscripción mensual:</p>
+
+  <div class="planes-grid">
+    <div class="plan-card">
+      <div class="plan-name">Basic</div>
+      <div class="plan-price">49€<span>/mes</span></div>
+      <div class="plan-features">Hasta 10 deudores · Niveles 1 y 2 · Sin emails incluidos</div>
+    </div>
+    <div class="plan-card">
+      <div class="plan-name">Pro</div>
+      <div class="plan-price">99€<span>/mes</span></div>
+      <div class="plan-features">Hasta 50 deudores · Niveles 1 a 4 · Emails incluidos</div>
+    </div>
+    <div class="plan-card">
+      <div class="plan-name">Business</div>
+      <div class="plan-price">199€<span>/mes</span></div>
+      <div class="plan-features">Deudores ilimitados · Niveles 1 a 4 · Emails y reportes mensuales</div>
+    </div>
+  </div>
+
+  <p>Todos los precios incluyen IVA. La facturación es mensual y se renueva automáticamente salvo cancelación previa. Los precios pueden modificarse con un preaviso de 30 días por email.</p>
+
+  <h2>3. Pago y facturación</h2>
+  <p>El pago se realiza mediante tarjeta de crédito o débito a través de Stripe, Inc. Al contratar autorizas el cobro recurrente mensual en la tarjeta proporcionada.</p>
+  <ul>
+    <li>El acceso al servicio se activa automáticamente tras la confirmación del pago</li>
+    <li>En caso de fallo en el cobro, el acceso puede suspenderse hasta regularizar el pago</li>
+    <li>Emitiremos factura por cada cargo mensual al email de registro</li>
+  </ul>
+
+  <h2>4. Política de reembolso</h2>
+  <p>Dado que CobraFlow es un servicio digital con acceso inmediato, no se aplica el derecho de desistimiento de 14 días previsto en el TRLGDCU una vez activado el acceso a la plataforma, conforme al artículo 103.a) de dicha norma.</p>
+  <p>No obstante, si experimentas un problema técnico grave que impida el uso del servicio y no podemos resolverlo en 72 horas, estudiaremos el reembolso proporcional del período afectado de forma caso por caso. Escríbenos a <a href="mailto:soporte@cobraflow.es">soporte@cobraflow.es</a>.</p>
+
+  <h2>5. Cancelación</h2>
+  <p>Puedes cancelar tu suscripción en cualquier momento escribiendo a <a href="mailto:soporte@cobraflow.es">soporte@cobraflow.es</a>. La cancelación surte efecto al final del período mensual en curso — no se realizan reembolsos proporcionales por días no utilizados.</p>
+  <p>Tras la cancelación, tus datos se conservan 30 días para posible reactivación. Pasado ese plazo se eliminan de forma permanente conforme a la Política de Privacidad.</p>
+
+  <h2>6. Obligaciones del usuario</h2>
+  <p>Al usar CobraFlow te comprometes a:</p>
+  <ul>
+    <li>Utilizar el servicio únicamente para reclamar facturas reales y legítimas en el ejercicio de tu actividad profesional o empresarial</li>
+    <li>Introducir únicamente datos de deudores con los que mantengas una relación comercial real y documentada</li>
+    <li>No utilizar la plataforma para enviar comunicaciones fraudulentas, engañosas o con fines distintos al cobro legítimo de facturas</li>
+    <li>Mantener la confidencialidad de tus credenciales de acceso y notificarnos inmediatamente ante cualquier uso no autorizado</li>
+    <li>Cumplir con la normativa aplicable, incluyendo el RGPD respecto a los datos de tus deudores que introduces en la plataforma</li>
+  </ul>
+  <p>Eres el responsable del tratamiento de los datos de tus deudores. CobraFlow actúa como encargado del tratamiento a tu disposición.</p>
+
+  <h2>7. Usos prohibidos</h2>
+  <p>Queda expresamente prohibido:</p>
+  <ul>
+    <li>Usar CobraFlow para enviar spam, comunicaciones masivas no solicitadas o cualquier comunicación no relacionada con cobro de facturas legítimas</li>
+    <li>Intentar acceder a datos de otros usuarios de la plataforma</li>
+    <li>Realizar ingeniería inversa, descompilar o intentar obtener el código fuente del servicio</li>
+    <li>Revender, sublicenciar o ceder el acceso a terceros</li>
+    <li>Usar el servicio de forma que pueda dañar la reputación o el funcionamiento de CobraFlow o de terceros</li>
+  </ul>
+  <p>El incumplimiento de estas prohibiciones puede resultar en la suspensión inmediata del servicio sin reembolso.</p>
+
+  <h2>8. Disponibilidad del servicio</h2>
+  <p>Nos esforzamos por mantener CobraFlow disponible 24/7, pero no garantizamos una disponibilidad ininterrumpida. Podemos realizar tareas de mantenimiento con o sin previo aviso. No seremos responsables de pérdidas derivadas de interrupciones del servicio fuera de nuestro control razonable.</p>
+
+  <h2>9. Limitación de responsabilidad</h2>
+  <p>CobraFlow es una herramienta de comunicación y seguimiento. En ningún caso seremos responsables de:</p>
+  <ul>
+    <li>El impago por parte de los deudores del usuario</li>
+    <li>Las consecuencias legales de las comunicaciones enviadas en nombre del usuario</li>
+    <li>Pérdidas de negocio, lucro cesante o daños indirectos de cualquier naturaleza</li>
+    <li>El uso que el usuario haga de los emails generados por la plataforma</li>
+  </ul>
+  <p>En cualquier caso, nuestra responsabilidad máxima frente al usuario quedará limitada al importe pagado en los 3 meses anteriores al evento que origine la reclamación.</p>
+
+  <h2>10. Propiedad intelectual</h2>
+  <p>Todos los derechos de propiedad intelectual sobre CobraFlow (código, diseño, marca, textos) pertenecen a <span class="placeholder">[NOMBRE COMPLETO O RAZÓN SOCIAL]</span>. El usuario obtiene una licencia de uso no exclusiva, intransferible y revocable para acceder al servicio durante la vigencia de su suscripción.</p>
+  <p>Los datos que el usuario introduce en la plataforma son de su exclusiva propiedad. CobraFlow no reivindica ningún derecho sobre ellos.</p>
+
+  <h2>11. Modificación de los términos</h2>
+  <p>Podemos modificar estos términos en cualquier momento. Te notificaremos por email con al menos 15 días de antelación ante cambios sustanciales. El uso continuado del servicio tras la entrada en vigor de los nuevos términos implica su aceptación.</p>
+
+  <h2>12. Legislación aplicable y jurisdicción</h2>
+  <p>Estos términos se rigen por la legislación española. Para cualquier controversia derivada de este contrato, las partes se someten, con renuncia expresa a cualquier otro fuero, a la jurisdicción de los Juzgados y Tribunales de la ciudad de Madrid.</p>
+
+  <h2>13. Contacto</h2>
+  <p>Para cualquier consulta sobre estos términos, escríbenos a <a href="mailto:soporte@cobraflow.es">soporte@cobraflow.es</a>. Nos comprometemos a responder en un plazo máximo de 5 días hábiles.</p>
+
+</div>
+
+<footer>
+  © 2026 CobraFlow &nbsp;·&nbsp;
+  <a href="/privacidad.html">Política de Privacidad</a> &nbsp;·&nbsp;
+  <a href="/terminos.html">Términos de Servicio</a>
+</footer>
+
+</body>
+</html>
